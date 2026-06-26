@@ -1,0 +1,6 @@
+{
+  "name": "Daemon AI Platform Landing Page",
+  "description": "Daemon is the AI-driven data automation platform that turns multi-step workflows into autonomous, secure, production-ready agents.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

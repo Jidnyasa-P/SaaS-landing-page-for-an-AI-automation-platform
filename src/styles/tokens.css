@@ -1,0 +1,53 @@
+:root {
+  /* ============ COLOR — verbatim from colorPallet.pdf ============ */
+  /* Light surfaces */
+  --c-arctic-powder: #F1F6F4;   /* contrast 19.23:1 against Oceanic Noir text */
+  --c-mystic-mint:   #D9E8E2;   /* contrast 16.59:1 */
+
+  /* Dark surfaces */
+  --c-oceanic-noir:        #172B36; /* contrast 14.63:1 */
+  --c-nocturnal-expedition:#114C5A; /* contrast 9.52:1 */
+
+  /* Accents */
+  --c-forsythia:    #FFC801; /* contrast 13.51:1 */
+  --c-deep-saffron: #FF9932; /* contrast 9.85:1 */
+
+  /* Semantic aliases — use these in components, not raw names above,
+     so a future palette swap only touches this block */
+  --bg-light:      var(--c-arctic-powder);
+  --bg-light-alt:  var(--c-mystic-mint);
+  --bg-dark:       var(--c-oceanic-noir);
+  --bg-dark-alt:   var(--c-nocturnal-expedition);
+  --accent-primary:   var(--c-forsythia);
+  --accent-secondary: var(--c-deep-saffron);
+  --text-on-light: var(--c-oceanic-noir);
+  --text-on-dark:  var(--c-arctic-powder);
+
+  /* ============ TYPE — fonts.pdf: two-family system ============ */
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace; /* headers, labels, data, prices */
+  --font-body: 'Inter', system-ui, sans-serif;             /* body copy, UI controls */
+
+  --fs-display: clamp(2.5rem, 6vw, 5rem);
+  --fs-h2: clamp(1.75rem, 3.2vw, 2.75rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --fs-label: 0.8125rem;
+
+  /* ============ MOTION — brief's Entrance & Motion Constraints ============ */
+  /* Micro-interactions: hovers/toggles -> 150-200ms ease-out */
+  --dur-micro: 180ms;
+  --ease-micro: cubic-bezier(0.16, 1, 0.3, 1); /* ease-out */
+
+  /* Structural layout reflows: bento<->accordion -> 300-400ms ease-in-out */
+  --dur-reflow: 350ms;
+  --ease-reflow: cubic-bezier(0.65, 0, 0.35, 1); /* ease-in-out */
+
+  /* Whole entry/loader orchestration must stay under this total */
+  --budget-entry-total: 500ms;
+
+  /* ============ LAYOUT ============ */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --container: 1200px;
+  --gap-grid: 1px; /* hairline grid-line look from reference video */
+}

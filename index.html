@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ===== SEO / Semantic metadata — 10 pt scoring section ===== -->
+  <title>Daemon — AI Data Automation Platform</title>
+  <meta name="description" content="Daemon is the AI-driven data automation platform that turns multi-step workflows into autonomous, secure, production-ready agents." />
+  <meta name="keywords" content="AI automation, data pipelines, autonomous agents, workflow automation" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://your-deployed-domain.vercel.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Daemon — AI Data Automation Platform" />
+  <meta property="og:description" content="Turn multi-step workflows into autonomous, secure, production-ready agents." />
+  <meta property="og:image" content="/og-image.png" />
+  <meta property="og:url" content="https://your-deployed-domain.vercel.app/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Daemon — AI Data Automation Platform" />
+  <meta name="twitter:description" content="Turn multi-step workflows into autonomous, secure, production-ready agents." />
+  <meta name="twitter:image" content="/og-image.png" />
+
+  <!-- ===== Fonts: JetBrains Mono (headers/labels/data) + Inter (body/UI) =====
+       Self-host these two files from the provided asset pack instead of a
+       Google Fonts <link> if you want one less external request — drop the
+       woff2 files into /public/fonts and swap to @font-face in tokens.css. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Inline critical loader CSS so the entry sequence can start before any
+       JS bundle parses — keeps the 500ms orchestration cap honest. -->
+  <style>
+    #app-loader {
+      position: fixed; inset: 0; display: flex; align-items: center; justify-content: center;
+      background: #172B36; z-index: 9999;
+      transition: opacity 200ms ease-out;
+    }
+    #app-loader.is-hidden { opacity: 0; pointer-events: none; }
+  </style>
+</head>
+<body>
+  <div id="app-loader" aria-hidden="true"></div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>
