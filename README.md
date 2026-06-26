@@ -97,5 +97,3 @@ npm run build
 # 4. Preview the local production build
 npm run preview
 ```
-
-Built by Jidnyasa Patil
